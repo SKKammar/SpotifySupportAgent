@@ -1,0 +1,528 @@
+{
+  "meta": {
+    "total": 85,
+    "target": 250,
+    "intents": [
+      "playback_issue",
+      "account_access",
+      "billing_subscription",
+      "content_missing",
+      "app_device_issue",
+      "general_feedback",
+      "other"
+    ],
+    "exported_at": "2026-09-14T15:10:27.902Z"
+  },
+  "labels": [
+    {
+      "tweet_id": "2006281",
+      "customer_text": "I love , but when I hit Shuffle, I expect the whole playlist to shuffle. Never got this treatment from",
+      "spotify_reply": "Hi Joshua! We’ve recently made some improvements to our shuffle algorithm. We’d love to hear your feedback here: /DR",
+      "intent": "general_feedback"
+    },
+    {
+      "tweet_id": "2699567",
+      "customer_text": "Hi, it's like i need help with a playlist that is in my old account, i just want to have it in my new account ( i made a new account to dislink the fb ) but i thought in premium i'd have the chance, any help :(",
+      "spotify_reply": "Hey! We've just replied to your DM. Let's continue chatting there /GT",
+      "intent": "account_access"
+    },
+    {
+      "tweet_id": "1942493",
+      "customer_text": "Unsure what's going on but noticed my library isn't listing all of my songs that I've added. Is there a known issue right now?",
+      "spotify_reply": "Hey Caroline! That's odd. Can you let us know the device/OS and Spotify version you're using? We'll see what we can suggest /YM",
+      "intent": "content_missing"
+    },
+    {
+      "tweet_id": "76244",
+      "customer_text": "please help me with my login.",
+      "spotify_reply": "Hey there! Can you DM us your account's username or email address? We'll take a look backstage /MS",
+      "intent": "account_access"
+    },
+    {
+      "tweet_id": "1088597",
+      "customer_text": "why is my (online and osx) player skipping each 30 seconds to next song? I have a premium account and happens for weeks already.",
+      "spotify_reply": "Hey, help's here! Can you let us know the device, OS, and Spotify version you're using? We'll see what we can suggest /KL",
+      "intent": "playback_issue"
+    },
+    {
+      "tweet_id": "2490945",
+      "customer_text": "I upgraded my phone, and my saved library won't appear on my new phone. Yes I am logged into the right account",
+      "spotify_reply": "We've just sent a DM your way. Let's carry on chatting there 🙂 /CG",
+      "intent": "content_missing"
+    },
+    {
+      "tweet_id": "2627892",
+      "customer_text": "I lost all my playlists and song cache. What has happened? Its like I logged in for the 1st time. Help.",
+      "spotify_reply": "Hey, that's no fun! Can you DM us with your account's username and email address? We'll check things out backstage /WW",
+      "intent": "content_missing"
+    },
+    {
+      "tweet_id": "713838",
+      "customer_text": "Im on samsung j7 and its acting like it dosent know where my music is saved i have not switched any sd cards and memory is not full",
+      "spotify_reply": "Hmm, that's odd. Can you send over your email address and username? We'll take a closer look /RV",
+      "intent": "content_missing"
+    },
+    {
+      "tweet_id": "1819268",
+      "customer_text": "Anyone else receive a notification email address associated w/ their account changed? Unknown Android device added to my acct too",
+      "spotify_reply": "Hey there! That doesn't sound good. Can you DM us your account's email address or username? We'll take a look backstage /PB",
+      "intent": "account_access"
+    },
+    {
+      "tweet_id": "2019057",
+      "customer_text": "trouble getting my wife signed up via our premium family account... sent an invite and she is getting an error. Need help.",
+      "spotify_reply": "Hi Brett, help's here! Can you DM us the usernames or email addresses of your and your wife's accounts? We'll take a look backstage /MC",
+      "intent": "billing_subscription"
+    },
+    {
+      "tweet_id": "2916662",
+      "customer_text": "I'd really appreciate a function on Spotify Connect to forget a device. My Spotify keeps connecting to my neighbour's phone, and they must be mistakenly selecting to Listen on This Phone at which point it swaps our music over. Not cool.",
+      "spotify_reply": "We've just sent you a bit more info over DM. We'll carry on helping out there /MG",
+      "intent": "other"
+    },
+    {
+      "tweet_id": "2094269",
+      "customer_text": "Hey , why after my screen turns off does it show up as unavailable to play on on the other phone instantly it's so fucking stupid",
+      "spotify_reply": "Hey Mike, help's here! Can you let us know the devices, operating systems, and Spotify versions you're using? /RH",
+      "intent": "playback_issue"
+    },
+    {
+      "tweet_id": "1639046",
+      "customer_text": "several songs have incorrect/mismatched titles. two songs even have the same titles.",
+      "spotify_reply": "Thanks. We'll get this reported. Great detective work! /DF",
+      "intent": "content_missing"
+    },
+    {
+      "tweet_id": "1027113",
+      "customer_text": "hi please make a remove queue option I'm very annoyed with your app thanks.",
+      "spotify_reply": "Hey there! Could you let us know what device/OS you're using? Keep us posted /DF",
+      "intent": "playback_issue"
+    },
+    {
+      "tweet_id": "1934180",
+      "customer_text": "I really want to come over but when Groove/Play Music/iTunes all have the clean version of a recent album and you don't that's a problem.",
+      "spotify_reply": "1: Hi! Spotify doesn’t censor music – we make it available in whatever form it’s given to us. More info here:",
+      "intent": "content_missing"
+    },
+    {
+      "tweet_id": "2027445",
+      "customer_text": "Web bronzer log in circle or can'T find the page. I am not the only one I will ask a refund",
+      "spotify_reply": "Hey, that doesn't sound right. Can you try accessing the site using a private or incognito window? Let us know how everything goes /JE",
+      "intent": "billing_subscription"
+    },
+    {
+      "tweet_id": "1955710",
+      "customer_text": "Yo! Having loads of 'Error 3' messages when I try and sign in with my Facey B account! How do I fix it please?",
+      "spotify_reply": "Hey there, we're here to help! Could you DM us your account's email address? We'll check backstage for you /BX",
+      "intent": "account_access"
+    },
+    {
+      "tweet_id": "2823213",
+      "customer_text": "WHY ARE ALL MY SONGS GONE !?!??",
+      "spotify_reply": "Hey Alexis! Help's here. Can you DM us your account's email address? We'll take a look backstage /MG",
+      "intent": "content_missing"
+    },
+    {
+      "tweet_id": "1242917",
+      "customer_text": "I never requested email change. Can't get into my account",
+      "spotify_reply": "Hey! For security reasons, can you delete the last tweet you sent, and DM it to us instead? /RB",
+      "intent": "account_access"
+    },
+    {
+      "tweet_id": "1215721",
+      "customer_text": "email rep won't respond, Twitter rep won't respond. Wtf???",
+      "spotify_reply": "Hey Joshua! We've just replied to your DM. Check it out /C",
+      "intent": "account_access"
+    },
+    {
+      "tweet_id": "1825038",
+      "customer_text": "Streaming. I tried to download and it did not work. Message on desktop says something like this track is not available at this time",
+      "spotify_reply": "Could you send us a DM with your account's email address or username? We'll take a look backstage /LO",
+      "intent": "content_missing"
+    },
+    {
+      "tweet_id": "729782",
+      "customer_text": "Yo i just got premium but realised the email i used has been deleted so how do i get the receipt for it?",
+      "spotify_reply": "Hey! Can you DM us your account's username or email address so we can check? /JP",
+      "intent": "billing_subscription"
+    },
+    {
+      "tweet_id": "424392",
+      "customer_text": "- my shuffle has gone all wonky again: Multi-thousand track playlist, shuffle only sees first half-dozen albums. Premium Sub.",
+      "spotify_reply": "Hey. Thanks for the feedback, we've passed this on! We'd also recommend continuing to show your support at: /M",
+      "intent": "playback_issue"
+    },
+    {
+      "tweet_id": "1160842",
+      "customer_text": "the audio problems we're having with Windows, Spotify, and Bluetooth devices are really bad. Help?!",
+      "spotify_reply": "Hi Shelly! The cavalry's here. Can you send us a bit more info on what's happening? We'll see what we can do /AU",
+      "intent": "general_feedback"
+    },
+    {
+      "tweet_id": "1840149",
+      "customer_text": "no way it’s 30 min of ad free music",
+      "spotify_reply": "Hey, that doesn't sound good! Did the app crash any time during the 30 minutes? That can cause the ad-free time to reset. Let us know /RV",
+      "intent": "billing_subscription"
+    },
+    {
+      "tweet_id": "340614",
+      "customer_text": "Thanks - looks like I have to fill out a Contact Us form since the email address in my account was taken over from a hack.",
+      "spotify_reply": "No worries. Let us know if there's anything else we can help you with. We'll be right here waiting /NQ",
+      "intent": "account_access"
+    },
+    {
+      "tweet_id": "2823500",
+      "customer_text": "let me change my username!",
+      "spotify_reply": "Hi! We're afraid there's no option to change usernames, but we can help you set up a new account. Could you DM us your account's email address? /RE",
+      "intent": "account_access"
+    },
+    {
+      "tweet_id": "1938749",
+      "customer_text": ", i'm not gonna change my Facebook account to Vietnamese just because i'm on vacation. Show me local ads i wont undestand it anyway.",
+      "spotify_reply": "Hey there! Don't worry, we're here to help. Can you DM us your account's email address? We'll take a look backstage /MT",
+      "intent": "account_access"
+    },
+    {
+      "tweet_id": "190106",
+      "customer_text": "it's a playlist in a set of folders. full path is feeling kind of... -&gt; ...emo -&gt; (all of the emo diaries). 119 songs. i was connected to wi-fi and got the errors i shared earlier. but when i paired over bluetooth i was able to play the playlist. heard of that problem before?",
+      "spotify_reply": "Thanks. Just to check, does the same thing happen on other offline playlists or just for the ones you've mentioned? /JU",
+      "intent": "playback_issue"
+    },
+    {
+      "tweet_id": "1867981",
+      "customer_text": "help pls, my app updated and some albums won't play /-:",
+      "spotify_reply": "Hey there! Don't worry, help's here. What device, operating system, and Spotify version are you using? We'll see what we can suggest /MT",
+      "intent": "content_missing"
+    },
+    {
+      "tweet_id": "1761831",
+      "customer_text": "Dont give me that automated crap If you were listening, this shoddy music verifying would have been sorted out back in '06 when you launched",
+      "spotify_reply": "1: We're sorry you feel that way. We love to have all of his music on Spotify and are working to make this a reality. By the way, you can...",
+      "intent": "playback_issue"
+    },
+    {
+      "tweet_id": "2586513",
+      "customer_text": "Found it, but there's no songs",
+      "spotify_reply": "Can you try logging out, restarting your device, and logging back in to see if the songs are still not showing? /FR",
+      "intent": "content_missing"
+    },
+    {
+      "tweet_id": "2284263",
+      "customer_text": "If I get a Spotify Premium account, can I access all my music from my Roku?",
+      "spotify_reply": "Hi Dennis! Once you're on Premium, you'll be able to play your tunes on your Roku device. More info here: /NY",
+      "intent": "billing_subscription"
+    },
+    {
+      "tweet_id": "1862320",
+      "customer_text": "can I get some help? I can’t login to our account. Thanks",
+      "spotify_reply": "Hey there, help's here! Can you DM us your account's email address and username? We'll see what we can suggest 🙂 /CG",
+      "intent": "account_access"
+    },
+    {
+      "tweet_id": "1044333",
+      "customer_text": "why is airplay free and Sonos play not?",
+      "spotify_reply": "Hey Andy! We've more got info on this at Any other questions, just give us a shout /RH",
+      "intent": "billing_subscription"
+    },
+    {
+      "tweet_id": "1991041",
+      "customer_text": "not only is taking away my student account but also Hulu. WTF?! might be time to switch to Apple Music",
+      "spotify_reply": "Hey Alex, that's not cool! Can you DM us your account's email address or username? We'll take a look bakcstage /MT",
+      "intent": "billing_subscription"
+    },
+    {
+      "tweet_id": "383401",
+      "customer_text": "I'm trying to change my address on my family plan, it says I need to create a new account, can i use facebook again?",
+      "spotify_reply": "Hey, help's here! Can you DM us your account's email address? We'll see what we can suggest /GK",
+      "intent": "account_access"
+    },
+    {
+      "tweet_id": "792223",
+      "customer_text": "I Finally chose to sign up to Spotify but without going through Facebook and it generated a stupid code username. Want to close my account and resubscribe but the contact/chat system won't work. can anyone pls help!? :'(",
+      "spotify_reply": "Hey! Can you DM us your account's email address? We'll see what we can suggest /CB",
+      "intent": "account_access"
+    },
+    {
+      "tweet_id": "1873162",
+      "customer_text": "Hello my account got hacked by some random spanish peeps. But i managed to log out from all devices. What should i do?",
+      "spotify_reply": "Hey, that's not cool. Can you fire over your account's email address via DM? We'll check under the hood /NY",
+      "intent": "account_access"
+    },
+    {
+      "tweet_id": "1174969",
+      "customer_text": "The family member I’m trying to invite to my plan doesn’t receive the email despite several re-sends?",
+      "spotify_reply": "Hey Kasper! Can you DM us the email addresses for both of your accounts? We'll take a look backstage /SJ",
+      "intent": "app_device_issue"
+    },
+    {
+      "tweet_id": "1089029",
+      "customer_text": "hi there Spotify. About 2 days ago when I am streaming music it keeps jumping like a scratched CD. I reset the setting.",
+      "spotify_reply": "Hey, help's here. Can you let us know the device, OS, and Spotify version you're using? We'll see what we can suggest /KL",
+      "intent": "playback_issue"
+    },
+    {
+      "tweet_id": "2960676",
+      "customer_text": "I just wanna know why I can pick and choose ANY song I want on on the computer but not my app.. 😒 #SoAnnoying #NoImNotAPremiumUserAnymoreButStill",
+      "spotify_reply": "Hey there! The available features of the Free service vary depending on what device you're using. For more info, check this out: Hope this helps /JX",
+      "intent": "app_device_issue"
+    },
+    {
+      "tweet_id": "1931637",
+      "customer_text": "Is there a reason why Spotify songs sound quieter now? I can barely hear the fullness of songs now.😣",
+      "spotify_reply": "Hi. We're sorry you feel that way. Can you let us know what device, OS, and Spotify version you're using? We'll see what we can suggest /LM",
+      "intent": "playback_issue"
+    },
+    {
+      "tweet_id": "149357",
+      "customer_text": "I’m trying to use spotify on my PS4 and when I try to link my account it tells me it’s already linked to one??",
+      "spotify_reply": "Hey there! That's not cool. Our friends over should be able to help with this. Give us a shout if you have other questions /QI",
+      "intent": "account_access"
+    },
+    {
+      "tweet_id": "1162441",
+      "customer_text": "I want to close my premium subscription but can’t log in through Facebook despite changing passwords can’t use contact form as can’t log in help!",
+      "spotify_reply": "Hey there! Can you DM us your account's email address? We'll take a look backstage /TJ",
+      "intent": "billing_subscription"
+    },
+    {
+      "tweet_id": "1973063",
+      "customer_text": "my account was hacked and email and password were changed on my spotify account",
+      "spotify_reply": "Hey there. Sorry to hear about that! We suggest you follow the steps at We hope that helps /CB",
+      "intent": "account_access"
+    },
+    {
+      "tweet_id": "2480757",
+      "customer_text": "If I cancel a premium account originated through iTunes and resubscribe under a new family plan, will I retain my playlists?",
+      "spotify_reply": "Hi Chris, help's here! Can you DM us your account's email address? We'll take a look backstage /DV",
+      "intent": "billing_subscription"
+    },
+    {
+      "tweet_id": "2948900",
+      "customer_text": "Just Closed the App and Opened it again. Everything's working fine now, I'm completely back to streaming at 1am instead of sleeping 😄",
+      "spotify_reply": "Awesome, that's what we like to hear! If you need help with anything else, just give us a shout. Otherwise, have a... 😉 /GU",
+      "intent": "general_feedback"
+    },
+    {
+      "tweet_id": "1925336",
+      "customer_text": "It keeps saying (daily) I'm offline when not then: log out desktop, try login in FB, screen doesn't come up to agree to login",
+      "spotify_reply": "Hi Shari! Can you DM us your account's email address and a screenshot of what you're seeing on your end? We'll check backstage /AU",
+      "intent": "account_access"
+    },
+    {
+      "tweet_id": "380825",
+      "customer_text": "Heyy i have songs downloaded for a long while then this happens can you explain",
+      "spotify_reply": "Hi there! Check out the steps under “Downloads unexpectedly removed” at They should help with this /YM",
+      "intent": "content_missing"
+    },
+    {
+      "tweet_id": "687034",
+      "customer_text": "dear Spotify, why do the recommended songs based on my playlist have 80% local songs listed whereas my playlist itself barely has any? The algorythm seems to be lacking a basic understanding of my music choice",
+      "spotify_reply": "Hey there! Well, that's embarrassing. Thanks for reporting. We'll pass it on to the right folks /PL",
+      "intent": "general_feedback"
+    },
+    {
+      "tweet_id": "1781669",
+      "customer_text": "hey! My daughter is added to my family premium plan but her account won’t upgrade from free. Please help!",
+      "spotify_reply": "Hey Tucker! Can you DM us the username and email address of your daughter's account? We'll check backstage /JL",
+      "intent": "billing_subscription"
+    },
+    {
+      "tweet_id": "2905918",
+      "customer_text": "Well after the update most of the songs sound robotic",
+      "spotify_reply": "Thanks! Can you clarify on what you mean by robotic? If you can send over a video/audio recording of how it sounds like, that would be great /JP",
+      "intent": "general_feedback"
+    },
+    {
+      "tweet_id": "1775589",
+      "customer_text": "I just accidentally thumbs-downed a song that I wanted to hit rewind to hear again. Come on guys that's a terrible UX fail! :-(",
+      "spotify_reply": "Hi! Right now it isn’t possible to undo the action, but we’ll pass on your feedback. You can unsave songs saved to Your Library, though /KB",
+      "intent": "app_device_issue"
+    },
+    {
+      "tweet_id": "885118",
+      "customer_text": "How do I sync up my app and web player? I get my premium on the web player but cannot access it on my app- logged into same acct",
+      "spotify_reply": "Hey Katie! Can you DM us your account's email address? We'll take a look under the hood /QI",
+      "intent": "account_access"
+    },
+    {
+      "tweet_id": "2444269",
+      "customer_text": ". Been trying to add my dad on my Spotify premium since yesterday. I might just switch to Apple Music. .",
+      "spotify_reply": "Hey Akash! Could you send us a DM with your and your dad's usernames or accounts' email addresses? We'll take a look backstage /CH",
+      "intent": "billing_subscription"
+    },
+    {
+      "tweet_id": "2792168",
+      "customer_text": "help! Cant reset password !",
+      "spotify_reply": "Hi Zeb. Help's arrived! Could you send us your email address via DM? Also, if you've received any error messages while trying to reset your password, a screenshot of it would be really helpful. We'll see what's going on /KA",
+      "intent": "account_access"
+    },
+    {
+      "tweet_id": "455642",
+      "customer_text": "What is the point? You’ve done nothing about it and people have been asking for years. I want to protect my children and you clearly have your own agenda as other streaming services manage to filter explicit content.",
+      "spotify_reply": "We understand how you feel. We appreciate your feedback. We'll be sure to pass it on to the relevant team /AR",
+      "intent": "playback_issue"
+    },
+    {
+      "tweet_id": "864563",
+      "customer_text": "halp! I can't get anything by Beck to play on my account. Everything else is working. Any advice on how I can fix?",
+      "spotify_reply": "Hey Tara! Are you getting any specific error messages when you're trying to play Beck songs? If so, a screenshot of it would help /AR",
+      "intent": "playback_issue"
+    },
+    {
+      "tweet_id": "11169",
+      "customer_text": "They aren’t locally imported… We just imported her iTunes playlist in Spotify so it found identical songs. Is that why they are greyed out?",
+      "spotify_reply": "You're right. It's possible that some tracks from her iTunes isn't available on Spotify. This is why you can't play these tracks /JU",
+      "intent": "other"
+    },
+    {
+      "tweet_id": "2757609",
+      "customer_text": "PLEASE SPOTIFY DONT MAKE INDIA FEEL BORED NO GREAT MUSIC PLATFORM NEED SPOTIFY IN INDIA PLEASE🙏🙏🙏🙏🙏🙏",
+      "spotify_reply": "Hey Himanshu! We're launching regularly in countries around the world. Sign up here to be first to hear: /FR",
+      "intent": "general_feedback"
+    },
+    {
+      "tweet_id": "1379243",
+      "customer_text": "The horror of discovering all but 1 of your playlists are suddenly not available offline anymore, right before a 10 hour fight.",
+      "spotify_reply": "Hey, sorry to hear that! The steps under “Downloads unexpectedly removed” at should help with this /MG",
+      "intent": "content_missing"
+    },
+    {
+      "tweet_id": "837865",
+      "customer_text": "saya udah jd premium kok ga bisa skip lagu/geser ya?",
+      "spotify_reply": "Hey! We can help out in English via Twitter, but we also have Indonesian support via email at /YM",
+      "intent": "other"
+    },
+    {
+      "tweet_id": "941233",
+      "customer_text": "I am shocked at you suggesting that to a premium user. How do you suggest getting back songs I have synced over 5 years?",
+      "spotify_reply": "Apologies for the confusion. Just to clarify, are the deleted songs you're referring to your downloaded songs? /MT",
+      "intent": "billing_subscription"
+    },
+    {
+      "tweet_id": "9383",
+      "customer_text": "please fix ASAP I hate Apple Music I don’t want to use them 😩",
+      "spotify_reply": "Hey, help's here! Is it still missing after logging out, restarting the app, then logging back in? Let us know how it goes /SJ",
+      "intent": "other"
+    },
+    {
+      "tweet_id": "2816732",
+      "customer_text": "Would love 2 hear #Worship Bridgette Hammers #BreakingFree added #Playlist Top Christian",
+      "spotify_reply": "Hey there! Thanks for the feedback. Our Curation team are independent &amp; use taste, data, research, and trends to create playlists, but we’ll pass on your suggestion /NQ",
+      "intent": "content_missing"
+    },
+    {
+      "tweet_id": "488803",
+      "customer_text": "I just found out there is a video function in spotify, but i cant seem to play any videos. I am in Norway, i have premium and my spotify desktop version is 1.0.68.407.g6864aaaf. Thanks in advance.",
+      "spotify_reply": "Hey! Can you send us the Video Link? Just tap the three dots &gt; Share &gt; Copy Link. We'll take a look backstage /MX",
+      "intent": "general_feedback"
+    },
+    {
+      "tweet_id": "2865500",
+      "customer_text": "- having problems with my account. same email address - on one device it's showing as premium (App) and another (Facebook/web) without premium. Help please!",
+      "spotify_reply": "Hey! The cavalry's here. Can you DM us your account's username or email address? We'll take a look under the hood /JS",
+      "intent": "account_access"
+    },
+    {
+      "tweet_id": "1486555",
+      "customer_text": "then what is the download songs feature for???",
+      "spotify_reply": "Just to clarify, are you referring to your saved songs in Your Library? /MT",
+      "intent": "general_feedback"
+    },
+    {
+      "tweet_id": "120279",
+      "customer_text": "I don't know what it is. After my fb was locked out my spotify username on my laptop changed to a number",
+      "spotify_reply": "We've just sent a DM your way. Let's carry on chatting there 🙂 /CG",
+      "intent": "account_access"
+    },
+    {
+      "tweet_id": "1847231",
+      "customer_text": "how do I delete my account, you are charging me for two accounts, I don’t know why and I can’t find out how to cancel?",
+      "spotify_reply": "1: Hey Karen, that doesn't sound right! Can you DM us the email addresses that you may have used to set up the Spotify accounts so we...",
+      "intent": "account_access"
+    },
+    {
+      "tweet_id": "1648674",
+      "customer_text": "Like, it'll say it's playing the song, but no time will elapse, or if it does there will be no sound. Meaning either restart or fiddle.",
+      "spotify_reply": "Got it! Could you try uninstalling and reinstalling the app? Let us know how it goes /DF",
+      "intent": "playback_issue"
+    },
+    {
+      "tweet_id": "2836378",
+      "customer_text": "Hey Spotify, it'd be great if you had better security measures so some random person in Italy could stop using my account. Thanks.",
+      "spotify_reply": "Hi there! That doesn't sound good. Can you DM us your account's email address or username? We'll take a look under the hood /XF",
+      "intent": "account_access"
+    },
+    {
+      "tweet_id": "1180934",
+      "customer_text": "Trying to switch my premium account to premium family with an invite from my dad; getting error 601 on confirmation page.",
+      "spotify_reply": "Hey Julia! Can you DM us your account's email address or username? We'll take a look /NS",
+      "intent": "billing_subscription"
+    },
+    {
+      "tweet_id": "1209315",
+      "customer_text": "I have an Xbox and you guys are blocking me from using my streaming subscription because it isn’t available in the BAHAMAS! WTF",
+      "spotify_reply": "Hey there! We're launching regularly in countries around the world. Sign up here to be first to hear: /AR",
+      "intent": "account_access"
+    },
+    {
+      "tweet_id": "2316492",
+      "customer_text": "I already have 30 songs on this playlist... how many do y'all suggest I have so I can avoid 7 suggested tracks in a row?",
+      "spotify_reply": "We'd suggest adding more tunes to your playlist, and check out if you've never had a subscription/trial before /RA",
+      "intent": "playback_issue"
+    },
+    {
+      "tweet_id": "2475171",
+      "customer_text": "my account (ccdap) has been hacked!",
+      "spotify_reply": "Hey Charles, sorry to hear about that. Could you send us a DM with your account's email address? We'll check things out /AY",
+      "intent": "account_access"
+    },
+    {
+      "tweet_id": "516760",
+      "customer_text": "I have already a premium account through Vodafone contract, if I upgrade to the family premium will I just be charged the difference?",
+      "spotify_reply": "Hey Robert! Can you DM us your account's email address or username? We'll take a look backstage /MT",
+      "intent": "billing_subscription"
+    },
+    {
+      "tweet_id": "1444710",
+      "customer_text": "I have Spotify Premium with 8 playlists. Will Spotify play all playlists continuously one after the other? Thanks 🙂",
+      "spotify_reply": "Hey Vanessa! We're afraid that's not possible right now. Don't worry, we'll let our devs know this is something you'd like to see /GK",
+      "intent": "playback_issue"
+    },
+    {
+      "tweet_id": "1713302",
+      "customer_text": "I am still a student (now masters) but u have upped the fees on my account as if I am no longer a student. Pls sort this out 4 me ❤",
+      "spotify_reply": "Hey there! Can you DM us your account's email address? We'll take a look backstage /RB",
+      "intent": "billing_subscription"
+    },
+    {
+      "tweet_id": "1252703",
+      "customer_text": "uhm we need nostalgia, ULTRA bc more frank ocean, the better &amp; I NEED frank's version of coldplay's strawberry swing on my phone!!!",
+      "spotify_reply": "Hey! We’d love to have all of his stuff available, but we have some info about content here: /NQ",
+      "intent": "content_missing"
+    },
+    {
+      "tweet_id": "1829952",
+      "customer_text": "I get that i'm a sub-sect user (Metal/Alt), but it nice be great if one of your Happy playlists wasn't 95% full of annoying music",
+      "spotify_reply": "Hi Eric! Our Curation team is independent &amp; uses taste, research, and trends to create playlists, but we’ll pass on your suggestion /JP",
+      "intent": "general_feedback"
+    },
+    {
+      "tweet_id": "2543080",
+      "customer_text": "Android app asks to log on but when I try it says I'm set to offline. Then gets stuck in a loop. 7gb of downloads I need to access!",
+      "spotify_reply": "Hey Richard! Help's here. Can you let us know the Android and Spotify versions you're running? We'll see what we can suggest /KM",
+      "intent": "account_access"
+    },
+    {
+      "tweet_id": "1794202",
+      "customer_text": "Samsung S8, Android 7.0, Spotify 8.4.22.857armV7 there is only Shuffle Play but no Play",
+      "spotify_reply": "Thanks for the info. Can you DM us your account's email address or username? We'll take a look backstage /KM",
+      "intent": "playback_issue"
+    },
+    {
+      "tweet_id": "2684807",
+      "customer_text": "what can i do if i dont know what email is linked to my account?",
+      "spotify_reply": "Hi Aryana, help's arrived! Could you DM us the username of your account? We'll be waiting for your reply 🔍 /JQ",
+      "intent": "account_access"
+    }
+  ]
+}

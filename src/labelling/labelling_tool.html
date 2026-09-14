@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SpotifyCares Label Tool</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #0a0a0a;
+            color: #e0e0e0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            color: #1DB954;
+            font-size: 1.4rem;
+            margin-bottom: 6px;
+            letter-spacing: 1px;
+        }
+
+        #progress-bar-container {
+            width: 100%;
+            max-width: 720px;
+            background: #222;
+            border-radius: 20px;
+            height: 8px;
+            margin: 16px 0 6px;
+        }
+
+        #progress-bar {
+            height: 8px;
+            background: #1DB954;
+            border-radius: 20px;
+            transition: width 0.3s ease;
+        }
+
+        #progress-text {
+            font-size: 0.8rem;
+            color: #888;
+            margin-bottom: 24px;
+        }
+
+        #card {
+            background: #181818;
+            border: 1px solid #282828;
+            border-radius: 12px;
+            padding: 28px;
+            max-width: 720px;
+            width: 100%;
+            margin-bottom: 24px;
+        }
+
+        #tweet-index {
+            font-size: 0.75rem;
+            color: #666;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        #customer-text {
+            font-size: 1.05rem;
+            line-height: 1.6;
+            color: #ffffff;
+            margin-bottom: 20px;
+            min-height: 60px;
+        }
+
+        #reply-section {
+            border-top: 1px solid #282828;
+            padding-top: 14px;
+            margin-top: 4px;
+        }
+
+        #reply-label {
+            font-size: 0.7rem;
+            color: #1DB954;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+        }
+
+        #spotify-reply {
+            font-size: 0.9rem;
+            color: #aaa;
+            line-height: 1.5;
+        }
+
+        #intent-buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            max-width: 720px;
+            width: 100%;
+            margin-bottom: 12px;
+        }
+
+        .intent-btn {
+            background: #181818;
+            border: 1px solid #333;
+            border-radius: 8px;
+            color: #e0e0e0;
+            padding: 12px 8px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            text-align: center;
+            transition: all 0.15s ease;
+            line-height: 1.4;
+        }
+
+        .intent-btn:hover {
+            border-color: #1DB954;
+            color: #1DB954;
+            background: #1a2e1e;
+        }
+
+        .intent-btn .key {
+            display: block;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #1DB954;
+            margin-bottom: 4px;
+        }
+
+        #skip-btn {
+            background: #111;
+            border: 1px solid #333;
+            border-radius: 8px;
+            color: #666;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            max-width: 720px;
+            width: 100%;
+            transition: all 0.15s ease;
+            margin-bottom: 20px;
+        }
+
+        #skip-btn:hover {
+            border-color: #666;
+            color: #aaa;
+        }
+
+        #action-bar {
+            display: flex;
+            gap: 12px;
+            max-width: 720px;
+            width: 100%;
+        }
+
+        #save-btn {
+            flex: 1;
+            background: #1DB954;
+            border: none;
+            border-radius: 8px;
+            color: #000;
+            padding: 12px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: bold;
+            transition: background 0.15s ease;
+        }
+
+        #save-btn:hover {
+            background: #1ed760;
+        }
+
+        #load-btn {
+            flex: 1;
+            background: #181818;
+            border: 1px solid #333;
+            border-radius: 8px;
+            color: #aaa;
+            padding: 12px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.15s ease;
+        }
+
+        #load-btn:hover {
+            border-color: #aaa;
+            color: #fff;
+        }
+
+        #load-input {
+            display: none;
+        }
+
+        #status {
+            margin-top: 14px;
+            font-size: 0.8rem;
+            color: #666;
+            text-align: center;
+        }
+
+        #status.success {
+            color: #1DB954;
+        }
+
+        #status.warning {
+            color: #f59e0b;
+        }
+
+        #load-csv-section {
+            max-width: 720px;
+            width: 100%;
+            background: #181818;
+            border: 1px dashed #333;
+            border-radius: 12px;
+            padding: 32px;
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        #load-csv-section p {
+            color: #888;
+            margin-bottom: 16px;
+            font-size: 0.9rem;
+        }
+
+        #csv-input {
+            display: none;
+        }
+
+        #load-csv-btn {
+            background: #1DB954;
+            border: none;
+            border-radius: 8px;
+            color: #000;
+            padding: 12px 28px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 0.95rem;
+        }
+
+        #main-tool {
+            display: none;
+        }
+
+        #done-screen {
+            display: none;
+            text-align: center;
+            padding: 40px;
+        }
+
+        #done-screen h2 {
+            color: #1DB954;
+            font-size: 1.5rem;
+            margin-bottom: 12px;
+        }
+
+        #done-screen p {
+            color: #888;
+            margin-bottom: 24px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🎵 SpotifyCares — Label Tool</h1>
+
+    <!-- Step 1: Load CSV -->
+    <div id="load-csv-section">
+        <p>Load your processed dataset to begin labelling.</p>
+        <p style="font-size:0.8rem; color:#555;">Select <strong>spotify_threads.csv</strong> from
+            <code>data/processed/</code></p>
+        <br>
+        <button id="load-csv-btn" onclick="document.getElementById('csv-input').click()">
+            Load spotify_threads.csv
+        </button>
+        <input type="file" id="csv-input" accept=".csv">
+    </div>
+
+    <!-- Main Tool -->
+    <div id="main-tool">
+        <div id="progress-bar-container">
+            <div id="progress-bar" style="width:0%"></div>
+        </div>
+        <div id="progress-text">0 / 250 labelled</div>
+
+        <div id="card">
+            <div id="tweet-index">Tweet #<span id="current-index">1</span></div>
+            <div id="customer-text"></div>
+            <div id="reply-section">
+                <div id="reply-label">Spotify's Reply</div>
+                <div id="spotify-reply"></div>
+            </div>
+        </div>
+
+        <div id="intent-buttons">
+            <button class="intent-btn" onclick="label('playback_issue')">
+                <span class="key">1</span>Playback Issue
+            </button>
+            <button class="intent-btn" onclick="label('account_access')">
+                <span class="key">2</span>Account Access
+            </button>
+            <button class="intent-btn" onclick="label('billing_subscription')">
+                <span class="key">3</span>Billing / Subscription
+            </button>
+            <button class="intent-btn" onclick="label('content_missing')">
+                <span class="key">4</span>Content Missing
+            </button>
+            <button class="intent-btn" onclick="label('app_device_issue')">
+                <span class="key">5</span>App / Device Issue
+            </button>
+            <button class="intent-btn" onclick="label('general_feedback')">
+                <span class="key">6</span>General Feedback
+            </button>
+            <button class="intent-btn" onclick="label('other')">
+                <span class="key">7</span>Other
+            </button>
+            <button id="skip-btn" onclick="skip()" style="grid-column: span 1;">
+                <span class="key" style="color:#666;">S</span>Skip
+            </button>
+        </div>
+
+        <div id="action-bar">
+            <button id="save-btn" onclick="saveLabels()">⬇ Download labels.json</button>
+            <button id="load-btn" onclick="document.getElementById('load-input').click()">
+                ↩ Resume from labels.json
+            </button>
+            <input type="file" id="load-input" accept=".json">
+        </div>
+
+        <div id="status"></div>
+    </div>
+
+    <!-- Done Screen -->
+    <div id="done-screen">
+        <h2>✅ 250 Labels Complete</h2>
+        <p>You've hit the target. Download your labels before closing.</p>
+        <button id="save-btn-done" onclick="saveLabels()" style="
+    background:#1DB954; border:none; border-radius:8px;
+    color:#000; padding:14px 32px; font-size:1rem;
+    font-weight:bold; cursor:pointer;">
+            ⬇ Download labels.json
+        </button>
+    </div>
+
+    <script>
+        const TARGET = 250;
+        const SKIP_THRESHOLD = 15; // skip tweets shorter than this after cleaning
+
+        let tweets = [];        // all loaded tweets
+        let currentIdx = 0;     // index into tweets array
+        let labels = [];        // { tweet_id, customer_text, spotify_reply, intent }
+        let labelledIds = new Set();
+
+        // ── CSV LOADING ──────────────────────────────────────────────────────────────
+
+        document.getElementById('csv-input').addEventListener('change', function (e) {
+            const file = e.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = function (ev) {
+                tweets = parseCSV(ev.target.result);
+                // Shuffle so labels are distributed across the dataset
+                tweets = shuffle(tweets);
+                document.getElementById('load-csv-section').style.display = 'none';
+                document.getElementById('main-tool').style.display = 'flex';
+                document.getElementById('main-tool').style.flexDirection = 'column';
+                document.getElementById('main-tool').style.alignItems = 'center';
+                showTweet();
+                setStatus(`Loaded ${tweets.length} tweets. Start labelling!`, 'success');
+            };
+            reader.readAsText(file);
+        });
+
+        function parseCSV(text) {
+            const lines = text.split('\n');
+            const headers = lines[0].split(',').map(h => h.trim().replace(/^"|"$/g, ''));
+            const rows = [];
+            for (let i = 1; i < lines.length; i++) {
+                const line = lines[i];
+                if (!line.trim()) continue;
+                // Handle quoted fields with commas inside
+                const cols = splitCSVLine(line);
+                if (cols.length < headers.length) continue;
+                const row = {};
+                headers.forEach((h, idx) => {
+                    row[h] = (cols[idx] || '').replace(/^"|"$/g, '').trim();
+                });
+                if (row.customer_text && row.customer_text.length >= SKIP_THRESHOLD) {
+                    rows.push(row);
+                }
+            }
+            return rows;
+        }
+
+        function splitCSVLine(line) {
+            const result = [];
+            let current = '';
+            let inQuotes = false;
+            for (let i = 0; i < line.length; i++) {
+                const ch = line[i];
+                if (ch === '"') {
+                    inQuotes = !inQuotes;
+                } else if (ch === ',' && !inQuotes) {
+                    result.push(current);
+                    current = '';
+                } else {
+                    current += ch;
+                }
+            }
+            result.push(current);
+            return result;
+        }
+
+        function shuffle(arr) {
+            for (let i = arr.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [arr[i], arr[j]] = [arr[j], arr[i]];
+            }
+            return arr;
+        }
+
+        // ── DISPLAY ──────────────────────────────────────────────────────────────────
+
+        function showTweet() {
+            // Skip already labelled or too-short tweets
+            while (
+                currentIdx < tweets.length &&
+                labelledIds.has(tweets[currentIdx].customer_tweet_id)
+            ) {
+                currentIdx++;
+            }
+
+            if (currentIdx >= tweets.length || labels.length >= TARGET) {
+                showDone();
+                return;
+            }
+
+            const tweet = tweets[currentIdx];
+            document.getElementById('current-index').textContent = currentIdx + 1;
+            document.getElementById('customer-text').textContent =
+                tweet.customer_text || '(empty)';
+            document.getElementById('spotify-reply').textContent =
+                tweet.spotify_reply || '(no reply)';
+            updateProgress();
+        }
+
+        function updateProgress() {
+            const count = labels.length;
+            const pct = Math.min((count / TARGET) * 100, 100);
+            document.getElementById('progress-bar').style.width = pct + '%';
+            document.getElementById('progress-text').textContent =
+                `${count} / ${TARGET} labelled`;
+        }
+
+        // ── LABELLING ────────────────────────────────────────────────────────────────
+
+        function label(intent) {
+            if (currentIdx >= tweets.length) return;
+            const tweet = tweets[currentIdx];
+
+            labels.push({
+                tweet_id: tweet.customer_tweet_id || tweet.thread_id || currentIdx,
+                customer_text: tweet.customer_text,
+                spotify_reply: tweet.spotify_reply,
+                intent: intent
+            });
+
+            labelledIds.add(tweet.customer_tweet_id);
+            currentIdx++;
+
+            if (labels.length >= TARGET) {
+                showDone();
+                return;
+            }
+
+            showTweet();
+        }
+
+        function skip() {
+            currentIdx++;
+            showTweet();
+            setStatus('Skipped.', '');
+        }
+
+        // ── SAVE / LOAD ───────────────────────────────────────────────────────────────
+
+        function saveLabels() {
+            const output = {
+                meta: {
+                    total: labels.length,
+                    target: TARGET,
+                    intents: [
+                        'playback_issue', 'account_access', 'billing_subscription',
+                        'content_missing', 'app_device_issue', 'general_feedback', 'other'
+                    ],
+                    exported_at: new Date().toISOString()
+                },
+                labels: labels
+            };
+            const blob = new Blob([JSON.stringify(output, null, 2)],
+                { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'labels.json';
+            a.click();
+            URL.revokeObjectURL(url);
+            setStatus(`Saved ${labels.length} labels to labels.json`, 'success');
+        }
+
+        document.getElementById('load-input').addEventListener('change', function (e) {
+            const file = e.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = function (ev) {
+                try {
+                    const data = JSON.parse(ev.target.result);
+                    labels = data.labels || [];
+                    labels.forEach(l => labelledIds.add(l.tweet_id));
+                    updateProgress();
+                    showTweet();
+                    setStatus(
+                        `Resumed: ${labels.length} existing labels loaded.`, 'success'
+                    );
+                } catch {
+                    setStatus('Failed to load labels.json — invalid format.', 'warning');
+                }
+            };
+            reader.readAsText(file);
+        });
+
+        // ── KEYBOARD SHORTCUTS ────────────────────────────────────────────────────────
+
+        document.addEventListener('keydown', function (e) {
+            const map = {
+                '1': 'playback_issue',
+                '2': 'account_access',
+                '3': 'billing_subscription',
+                '4': 'content_missing',
+                '5': 'app_device_issue',
+                '6': 'general_feedback',
+                '7': 'other'
+            };
+            if (map[e.key]) {
+                label(map[e.key]);
+            } else if (e.key === 's' || e.key === 'S') {
+                skip();
+            }
+        });
+
+        // ── DONE ──────────────────────────────────────────────────────────────────────
+
+        function showDone() {
+            document.getElementById('main-tool').style.display = 'none';
+            document.getElementById('done-screen').style.display = 'block';
+        }
+
+        // ── UTILS ─────────────────────────────────────────────────────────────────────
+
+        function setStatus(msg, type) {
+            const el = document.getElementById('status');
+            el.textContent = msg;
+            el.className = type || '';
+        }
+    </script>
+</body>
+
+</html>

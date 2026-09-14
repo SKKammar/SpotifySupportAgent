@@ -1,0 +1,7 @@
+venv/
+data/raw/
+outputs/faiss_index/
+outputs/embeddings/
+.env
+__pycache__/
+*.pyc
